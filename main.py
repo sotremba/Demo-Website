@@ -127,6 +127,7 @@ def login_existing_user():
     username = request.values.get('usr')
     password = request.values.get('passwrd')
     
+    create_user_table()
     registered_username = is_username_registered(username)
     if not registered_username:
         return render_template('login_missing_username.html')
