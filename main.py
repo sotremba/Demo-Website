@@ -122,7 +122,8 @@ def display_login():
 
 @app.route('/login-user', methods=['POST'])
 def login_existing_user():
-    """Login an existing user with the given information"""
+    """Attempt to log in an existing user into the database if the given password and username are 
+    consistent with the database"""
     print("Logging in User")
     username = request.values.get('usr')
     password = request.values.get('passwrd')
