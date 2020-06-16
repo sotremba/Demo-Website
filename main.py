@@ -20,7 +20,7 @@ def close_db(conn):
 
 
 def create_user_table():
-    """Creates a 'users' table in our database IF ONE DOES NOT ALREADY EXIST"""
+    """Creates a 'users' table in our database IF ONE DOES NOT ALREADY EXIST.  Does nothing otherwise."""
     conn, c = open_db()
     c.execute('''CREATE TABLE IF NOT EXISTS users (given_name text, family_name text, email text, state text,                                                               username text, password text);''')
     close_db(conn)
