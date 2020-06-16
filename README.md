@@ -1,3 +1,3 @@
-# Token-Verification-Research
+# Demo Website for GSI Integration
 
-Scripts and mock website to research the current implementation of id_token verification with Google Auth
+Demo website to test the ease of GSI integration into an existing website with traditional username and password login procedure
